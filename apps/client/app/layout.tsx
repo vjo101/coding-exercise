@@ -18,6 +18,7 @@ export default function RootLayout({
       <div className="navbar bg-base-100 bg-accent-content/5 mt-2 mb-4 rounded-md">
         <Link href="/purchase-orders" className="btn btn-ghost normal-case text-xl">Purchase Orders</Link>
         <Link href="/parent-items" className="btn btn-ghost normal-case text-xl">Item Catalog</Link>
+        <Link href="/create-purchase-order" className="btn btn-ghost normal-case text-xl">Create Purchase Order</Link>
       </div>
       <div className="mx-6">
         {children}

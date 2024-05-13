@@ -24,7 +24,24 @@ export default async function Index() {
 
   return (
     <>
-      <h1 className="text-2xl">Parent Items</h1>
+      <h1 className="text-3xl">Parent Items</h1>
+      <div className="flex">
+        <div>
+        {data.map((parentItem: ParentItem) => (
+          <div key={parentItem.id}>
+            <div
+              className="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">{parentItem.name}</div>
+            <div className="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">
+              <div className="flex flex-row">
+                {parentItem.items.map((item: Item) => (
+                  <div className="" key={item.id}>{item.name} ({item.sku})</div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
       <table className="border-collapse table-auto w-full text-sm">
         <thead>
         <tr>
