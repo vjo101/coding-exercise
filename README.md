@@ -71,3 +71,4 @@ Here is the schema we will use for this exercise.
 In the technical interview process we will makes some changes to this code expoloring concepts such as ERP and Inventory. More specific requirements will be shared during the collaboration session.
 
 We are looking forward to our pairing session soon!
+# GoodDaySoftwareCodingExercise
